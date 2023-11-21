@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="icon" href="images/wcelogo.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header sub-header-image-1">
+            <nav>
+                <a href="index.html"><img src="images/wcelogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+<!-- --------About us content-------- -->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Walchand College Of Engineering Sangli</h1>
+            <p>
+                Walchand College of Engineering is situated midway between Sangli and Miraj cities at Vishrambag, Sangli. The WCE campus is located on about 90 acres of land on southern side of Sangli ? Miraj road.            </p>
+            <p>
+                Achieve excellence in learning and research through continual improvement in both content and delivery of the academic programmes.
+
+                Promote close interaction among industry, faculty and students to enrich the learning process and enhance career opportunities for students.
+                
+                Develop state - of - the - art laboratories and other infrastructure commensurate with the need of delivering quality education and research services.
+                
+                Strngthen the Institution through network of alumni and optimize use of resources by leveraging inter - departmental capabilities.
+                
+                Provide opportunities and ensure regular skill. Up - gradation of faculty and staff through structured training programmes.            </p>
+        </div>
+        <div class="about-col">
+            <img src="images/wcemain.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <h4>About us</h4>
+
+    <div class="icons">
+        <a class="plain-link" href=""><i class="fa fa-twitter"></i></a>
+        <a class="plain-link" href=""><i class="fa fa-facebook"></i></a>
+        <a class="plain-link" href=""><i class="fa fa-instagram"></i></a>
+        <a class="plain-link" href=""><i class="fa fa-youtube"></i></a>
+    </div>
+    <p>
+        Made by Chinmay
+        <br>
+        
+            <a class="plain-link icons-blue" href=""><i class="fa fa-linkedin"></i></a>
+            <a class="plain-link icons-blue" href=""><i class="fa fa-github"></i></a>
+            <a class="plain-link icons-blue" href=""><i class="fa fa-instagram"></i></a>
+            <a class="plain-link icons-blue" href=""><i class="fa fa-at"></i></a>
+    </p>
+</section>
+
+
+
+
+
+
+
+
+<!-- -------------JavaScript for toggle menu------------ -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
