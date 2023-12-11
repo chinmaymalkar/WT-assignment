@@ -9,6 +9,7 @@ body {
   background-color: #eed;
 }
 
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -24,15 +25,32 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-.header {
-  min-height: 100vh;
+.text-box {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  min-height: 90vh;
+  max-height: 90vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 10, 0.7), rgba(4, 9, 10, 0.7)),
     url(images/backgroundwce.avif);
   background-position: center;
   background-size: cover;
+  animation: changeimage 8s linear infinite ;
   position: relative;
+}
+@keyframes changeimage {
+  0%{
+    background-image:linear-gradient(rgba(4, 9, 10, 0.7), rgba(4, 9, 10, 0.7)), url(images/backgroundwce.avif);
+  }
+  25%{
+    background-image:linear-gradient(rgba(4, 9, 10, 0.7), rgba(4, 9, 10, 0.7)), url(images/campus1.jpg);
+  }
+  50%{
+    background-image:linear-gradient(rgba(4, 9, 10, 0.7), rgba(4, 9, 10, 0.7)), url(images/campus2.jpg);
+  }
+  75%{
+    background-image:linear-gradient(rgba(4, 9, 10, 0.7), rgba(4, 9, 10, 0.7)), url(images/WCE_Sangli_Campus1.jpg);
+  }
 }
 
 nav {
@@ -60,7 +78,7 @@ nav img {
 }
 
 .nav-links ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 13px;
 }
@@ -80,7 +98,7 @@ nav img {
 }
 
 .text-box {
-  width: 90%;
+  width: 100%;
   color: white;
   position: absolute;
   top: 50%;
@@ -90,6 +108,7 @@ nav img {
 }
 
 .text-box h1 {
+  margin-top: 100px;
   font-size: 62px;
 }
 .text-box p {
